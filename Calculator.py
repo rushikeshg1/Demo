@@ -19,12 +19,14 @@ print("3.Multiply")
 print("4.Divide") 
 
 while True:
-    choice = input("Enter choice(1/2/3/4): ")
+    #choice = input("Enter choice(1/2/3/4): ")
+    choice = 1
     
     if choice in ('1', '2', '3', '4'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
+       # num1 = float(input("Enter first number: "))
+       # num2 = float(input("Enter second number: "))
+        num1 = 10
+        num2 = 20
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
@@ -37,7 +39,8 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
             
-        next_calculation = input("Let's do next calculation? (yes/no): ")
+       # next_calculation = input("Let's do next calculation? (yes/no): ")
+        next_calculation = "no":
         if next_calculation == "no":
           break
     
